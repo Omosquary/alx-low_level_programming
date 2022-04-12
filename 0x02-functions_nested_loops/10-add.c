@@ -6,13 +6,10 @@
 *
 * @a: number one.
 * @b: number two.
-* @c: Computation
 *
 * Return: Add of number one and number two.
 */
 int add(int a, int b)
 {
-	int c;
-	c	=	a	+	b;
-	return (c);
+	return (a + b);
 }
