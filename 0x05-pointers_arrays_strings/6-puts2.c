@@ -1,30 +1,28 @@
-#include <stdio.h>
 #include "main.h"
-/**
- *rev_string - update value.
- *@s: value to be evaluate.
- *Return: not.
- */
-void rev_string(char *s)
-{
-	int i = 0;
-	int l = 0;
-	char *y = s;
-	int e = 0;
-	int x;
-	char n;
 
-	while (*y != '\0')
+/**
+ * puts2 - writes every other character
+ * @str: input string to print
+ * Description: prints every other character of string
+ * Return: nothing
+ **/
+
+void puts2(char *str)
+{
+	int i, j;
+
+	i = 0;
+	j = 0;
+
+	while (str[i] != '\0')
 	{
-		y++;
 		i++;
 	}
-	l = i - 1;
-	for ( ; e < ((l / 2) + 1) ; e++)
+
+	while (j < i)
 	{
-		x = (l - e);
-		n = s[e];
-		s[e] = s[x];
-		s[x] = n;
+		_putchar(str[j]);
+		j += 2;
 	}
+	_putchar('\n');
 }
