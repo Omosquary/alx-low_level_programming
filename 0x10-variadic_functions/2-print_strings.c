@@ -1,6 +1,4 @@
 #include "variadic_functions.h"
-#include <stdrag.h>
-#include <stdlib.h>
 #include <stdio.h>
 /**
  * print_strings - is a function that prints strings
